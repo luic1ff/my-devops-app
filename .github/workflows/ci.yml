@@ -16,7 +16,7 @@ jobs:
       - name: Run tests
         run:  |
           python3 app.py &
-          sleap 2
+          sleep 2
           python3 -m pytest test_app.py
 
       - name: Login to Docker Hub
